@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Sell</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: #fff;
+        
+        }
+        body{
+            text-transform: uppercase;
+            font-family: "Playwrite DE Grund", cursive;
+            background-color: #424424;
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid black;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        ul li a{
+            margin: 0 5px;
+            border: 2px solid white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+        .logo{
+            border: 2px solid white;
+            padding: 10px 5px;
+            cursor: pointer;
+        }
+        .signup{
+            background-color: #fff;
+            color: black;
+            margin-left: 15px;
+        }
+        .signup:hover{
+            background-color: black;
+            color: #fff;
+
+        }
+        main{
+            display: flex;
+            height: 90vh;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0px 150px;
+            flex-wrap: wrap;
+        }
+        main h2{
+            font-size: 30px;
+            color: black;
+            
+            
+        }
+        main p{
+            text-transform: lowercase;
+            font-size: large;
+            line-height: 35px;
+            margin: 30px 0px;
+        }
+        .contentleft{
+            flex: 1;
+        }
+        .contentright{
+            flex:1;
+
+        }
+        .contentmid{
+
+            flex: 2;
+        }
+        img{
+            max-width: 500px;
+            height: auto;
+        }
+        .btn{
+            padding:15px;
+            color: black;
+            background-color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .btn:hover{
+            background-color: black;
+            color: #fff;
+            border: 2px solid white;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Sell Now</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="signup">Sign In</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+         <!-- divided into three part left, right, and mid -->
+        <div class="contentleft">
+            <h2>Mercury</h2>
+
+        </div>
+        <div class="contentmid">
+            <p>Mercury is the first planet from the Sun and the smallest in the Solar System. In English, it is named after the ancient Roman god Mercurius, god of commerce and communication, and the messenger of the gods.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+            <img class="img" src="./About.png" alt="Mercury">
+        </div>
+
+    </main>
+    
+</body>
+</html>
